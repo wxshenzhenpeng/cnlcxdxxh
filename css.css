@@ -1,0 +1,179 @@
+/* q_css */
+@charset "utf-8";
+body,*,html,a,h1,h2,h3,span,div,ul,li{margin:0; padding:0px;}
+body{font-family:microsoft yahei; font-size:14px; color:#666; text-decoration:none; line-height:24px;  }
+ul,li{list-style:none;}
+.clearfix:after{ content: "020"; display: block; height: 0; clear: both; visibility: hidden;  }
+.clearfix {  /* 触发 hasLayout */   zoom: 1;  }
+
+img{border:0px;}
+.fl{float:left;}
+.fr{float:right;}
+
+a{color:#666; text-decoration:none;}
+a:hover{ color:#d40005;}
+
+.grey{ color:#999;}
+a.grey:hover{ text-decoration:underline;}
+.red{color:#e10101;}
+a.red:hover{ text-decoration:underline;}
+.blue{ color:#0a70b1;}
+a.blue{ text-decoration:underline;}
+
+:focus{ outline:none;}
+h3{ font-weight:normal;}
+em,i{ font-style:normal;}
+
+.wrapper{ width:1200px; margin:0 auto;}
+.topline{ background-color:#eeeeee; line-height:40px;}
+.topline img{vertical-align:middle; padding:0 2px;}
+
+.top{ background:#0a70b1; color:#fff; padding:22px 0;}
+.top a{ color:#fff;}
+.nav{ width:920px; line-height:18px; height:36px;}
+.nav dl,.nav dt,.nav dd{float:left;}
+.nav dl{ border-right:1px solid #3088c0;padding-left:24px;}
+.nav .dl01{width:214px;}
+.nav .dl02{width:138px;}
+.nav dt{ font-size:15px; width:36px; font-weight:bold;padding-right:12px;}
+.nav dt a:hover{ color:yellow;}
+.nav dd{ padding-right:22px;}
+.nav dd a:hover{ text-decoration:underline;}
+.nav .nodl{ border:none;}
+.nav .nodl dt{padding-right:0px;}
+
+
+/*banner*/
+.slider-wrapper {width:100%; height:450px; overflow:hidden; position: relative; }
+.theme-default {width:100%; height:450px; position:relative; overflow:hidden;}
+.theme-default #slider {width:1920px; height:450px;position:absolute; left:50%; top:0; margin-left:-960px;}
+.theme-default .nivoSlider {position:relative;background:#fff url(loading.gif)/*tpa=http://www.cnlcxdxxh.com/loading.gif*/ no-repeat 50% 50%; -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a; -moz-box-shadow: 0px 1px 5px 0px #4a4a4a; box-shadow: 0px 1px 5px 0px #4a4a4a;}
+.theme-default .nivoSlider img {position:absolute; top:0px; left:0px; display:none;}
+.theme-default .nivoSlider a {border:0; display:block;}
+.theme-default .nivo-controlNav {position:absolute; left:50%; bottom:10px; margin-left:-55px;}
+.theme-default .nivo-controlNav a {display:block;width:22px;height:22px;background:url(bullets.png)/*tpa=http://www.cnlcxdxxh.com/images/bullets.png*/ no-repeat;text-indent:-9999px;border:0;float:left;}
+.theme-default .nivo-controlNav a.active {background-position:0 -22px;}
+.theme-default .nivo-directionNav a {display:block;width:30px;height:30px;background:url(arrows.png)/*tpa=http://www.cnlcxdxxh.com/images/arrows.png*/ no-repeat;text-indent:-9999px;border:0;}
+.theme-default a.nivo-nextNav {background-position:-30px 0; right:100px;}
+.theme-default a.nivo-prevNav {left:100px;}
+.theme-default .nivo-caption {font-family: Helvetica, Arial, sans-serif;}
+.theme-default .nivo-caption a {color:#fff; border-bottom:1px dotted #fff;}
+.theme-default .nivo-caption a:hover {color:#fff;}
+
+.nivoSlider {position:relative;}
+.nivoSlider img {position:absolute;top:0px;left:0px;}
+.nivoSlider a.nivo-imageLink {position:absolute;top:0px;left:0px;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none;}
+.nivo-slice {display:block;position:absolute;z-index:5;height:100%;}
+.nivo-box {display:block;position:absolute;z-index:5;}
+.nivo-directionNav a {position:absolute;top:45%;z-index:9;cursor:pointer;}
+.nivo-prevNav {left:0px;}
+.nivo-nextNav {right:0px;}
+.nivo-controlNav a {position:relative; z-index:9; cursor:pointer;}
+.nivo-controlNav a.active {font-weight:bold;}
+
+.homebox{ margin-top:35px;}
+.homebox .box01{ width:247px; float:left;}
+.homebox .box02{ width:670px; float:left; margin-left:16px;}
+.homebox .box03{ width:247px; float:right;}
+.homebox .tit{ color:#0d599d; font-size:18px; padding-left:15px; background:url(titline.jpg)/*tpa=http://www.cnlcxdxxh.com/images/titline.jpg*/ no-repeat left 8px;}
+.homebox .tit02{ font-size:18px; color:#fff; height:45px; background:url(titbg.jpg)/*tpa=http://www.cnlcxdxxh.com/images/titbg.jpg*/ repeat-x center center; padding:0 15px;}
+.homebox .tit02 h3{ float:left; line-height:45px;}
+.homebox .tit02 .more{ float:right; font-size:12px; color:#fff; line-height:45px;}
+.homebox .tit02 .more:hover{ text-decoration:underline;}
+
+.homeorg  .conn,.homerule .conn{ padding:9px; border:1px solid #dbdbdb; margin-top:10px; }
+.homeorg .conn p,.homerule .conn p{ background-color:#e8f0f5; font-size:13px; line-height:22px; padding:18px 12px;}
+.homeabout,.homenews{ border:1px solid #dbdbdb;}
+.homeabout .conn,.homenews .conn{ padding:15px;}
+.homeabout .info,.homenews .info{ padding-bottom:15px;border-bottom:1px solid #dbdbdb;}
+.homeabout .txt,.homenews .txt{ margin-top:15px;}
+
+.homespeach{ border:1px solid #e1e1e1; width:245px; height:521px; margin-bottom:32px; display:block;}
+.homeorg img{ width:100%; height:150px;}
+.homerule img{ float:left; margin-right:10px; margin-top:5px;}
+.homerule .conn p{ line-height:23px; height:238px;}
+.homeabout{ font-size:13px; line-height:23px;}
+.homeabout .txt{ font-size:13px; line-height:26px;}
+.homeabout .img{ float:left; margin-right:10px;}
+.homeabout .img img{ width:270px; height:215px;}
+.homenews{ margin-top:30px;}
+.homenews .tit02 ul{ float:left; margin-left:30px; margin-top:2px;}
+.homenews .tit02 li{ float:left; padding:8px 28px; background:url(newslibg.jpg)/*tpa=http://www.cnlcxdxxh.com/images/newslibg.jpg*/ repeat-x center center;font-size:15px; margin-left:3px;}
+.homenews .tit02 li a{ color:#256da9; }
+.homenews .tit02 li a:hover{ text-decoration:underline;}
+.homenews .info h3{ color:#256da9; font-size:16px; line-height:38px;}
+.homenews .info p{ line-height:22px;}
+.homenews .info .more{font-size:12px; padding-top:10px; display:block;}
+.homenews .txt{ height:260px;}
+.homenews .txt ul{}
+.homenews .txt li{ line-height:28px; background:url(newsdot.jpg)/*tpa=http://www.cnlcxdxxh.com/images/newsdot.jpg*/ no-repeat 5px center; padding-left:20px; font-size:15px;}
+
+.smallbanner{ height:90px; background:url(smallbanner.jpg)/*tpa=http://www.cnlcxdxxh.com/images/smallbanner.jpg*/ no-repeat center center; margin-top:32px;}
+
+.homework,.homeleader,.homepartner{ width:384px; float:left; margin-right:20px; border:1px solid #dbdbdb;}
+.homework .tit,.homeleader .tit,.homepartner .tit{ margin:10px 10px;}
+.homework .conn,.homeleader .conn,.homepartner .conn{ height:280px; border-top:1px solid #dbdbdb; padding:10px;}
+
+.homework img{ display:block; margin-bottom:10px; width:100%;}
+.homework .nomargin{ margin-bottom:0px;}
+.homeleader li{ line-height:28px; background:url(newsdot.jpg)/*tpa=http://www.cnlcxdxxh.com/images/newsdot.jpg*/ no-repeat 5px center; padding-left:20px; font-size:14px;}
+.homepartner{ margin-right:0px; float:right;}
+.homepartner li{ width:33.3%; float:left; text-align:center; height:66px; margin: 15px 0;}
+.homepartner li .img{ height:30px;}
+.homepartner li .img img{ height:30px;}
+.homepartner li .txt{ line-height:26px;}
+
+.footnav{ text-align:center; background-color:#f6f6f6; margin-top:46px; color:#0d599d; line-height:40px;}
+.footnav a{color:#0d599d; font-size:15px;}
+.footnav a:hover{ text-decoration:underline;}
+.footnav em{ display:inline-block; width:1px; background-color:#0d599d; height:8px; margin:0 10px;}
+.foot{ background-color:#e9e9e9; text-align:center; line-height:27px; padding:35px 0; color:#555555;}
+.foot a{ color:#555;}
+.foot a:hover{ text-decoration:underline;}
+
+/*内页*/
+.main{ margin-top:40px; min-height:600px;}
+.leftside{ width:250px; float:left;}
+.leftbox01{ border:1px solid #dbdbdb;}
+.leftbox01 h3{ background:url(titbg.jpg)/*tpa=http://www.cnlcxdxxh.com/images/titbg.jpg*/ repeat-x center center; padding:0 15px; color:#fff; line-height:45px;}
+.leftbox01 h3 a{}
+.leftbox01 ul{ padding:10px;}
+.leftbox01 li{ border-bottom:1px solid #fff; padding-left:25px; background:url(newsdot.jpg)/*tpa=http://www.cnlcxdxxh.com/images/newsdot.jpg*/ #e8f0f5 no-repeat 10px center; line-height:35px;}
+.leftbox02{ margin-top:15px;border:1px solid #dbdbdb; padding:10px;}
+.leftbox02 h3{ color:#0d599d; font-size:18px; padding-left:15px; background:url(titline.jpg)/*tpa=http://www.cnlcxdxxh.com/images/titline.jpg*/ no-repeat left 8px;}
+.leftbox02 img{ max-width:100%; margin-top:5px;}
+.leftbox02 ul{ }
+.leftbox02 li{ float:left; width:50%; margin-top:5px; height:54px; font-size:13px; }
+.leftbox02 li img{ height:26px;}
+.leftbox03{ margin-top:20px;}
+.leftbox03 h3{color:#0d599d; font-size:18px; padding-left:15px; background:url(titline.jpg)/*tpa=http://www.cnlcxdxxh.com/images/titline.jpg*/ no-repeat left 8px;}
+.leftbox03 .conn{padding:9px; border:1px solid #dbdbdb; margin-top:10px;}
+.leftbox03 .conn img{ max-width:100%;}
+.leftbox03 p{background-color:#e8f0f5; font-size:13px; line-height:22px; padding:18px 12px;}
+.leftbox03 .img{ float:left; margin-right:10px; margin-top:5px;}
+.content{ border:1px solid #dbdbdb; width:880px; float:right; padding:10px;}
+.content .contit{ background-color:#eee; line-height:40px; padding:0 10px; }
+.content .contit h3{ color:#0a70b1; font-size:18px; font-weight:bold; float:left;}
+.content .contit span{ float:right; font-size:13px;}
+.content .connt{ padding:20px 10px; font-size:14px; line-height:24px;}
+.content .news li{ line-height:38px; padding-left:20px; background:url(newsdot.jpg)/*tpa=http://www.cnlcxdxxh.com/images/newsdot.jpg*/ no-repeat 0px center}
+.content .news em{ color:#e10101;}
+.content .news span{ font-size:13px; float:right; color:#999;}
+.content .leader li{ line-height:25px;}
+.content .hrline{ margin:20px 0;border:0;background-color:#ddd;height:1px;}
+.content .partner li{ float:left; width:20%; text-align:center; margin-top:30px;}
+.content .partner .img img{ height:30px;}
+.content .partner .txt{ height:35px;} 
+.content .work{ line-height:35px;}
+.content .work .time{ padding-right:20px;}
+.content .work .more{ color:#0a70b1;}
+.content .download li{ line-height:30px; border-bottom:1px dotted #ccc; padding-top:10px;}
+.content .download .tit{ width:80%; width:654px; float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.content .download .time{ width:87px; float:left; color:#999; font-size:12px; margin-right:30px;}
+.content .download a:hover{ color:#336cb1;}
+.content .download li span{ color:#336cb1;}
+
+
+
+.tabpro{ border-collapse:collapse; width:100%;}
+.tabpro td{ border:1px solid #ccc; padding:3px;}
